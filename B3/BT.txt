@@ -1,0 +1,97 @@
+# Bài tập 1:
+# Nhập 1 số nguyên (input):
+
+# Kiểm tra chẵn lẻ (số chia hết cho 2 -> số chia cho 2 dư 0).Ví dụ: 2 4 6 8 10:
+number = int(input())
+if number % 2 == 0:
+  print("even number")
+else:
+  print("odd number")
+
+# Bài tập 2:
+"""
+So sánh lương của hai người:
+Nhập mức lương của hai người từ bàn phím. So sánh và in ra:
+"person1" nếu người thứ nhất có mức lương cao hơn.
+"person2" nếu người thứ hai có mức lương cao hơn.
+a = int(input())
+b = int(input())
+if a > b :
+  print ("person 1")
+else :
+  print ("person 2")
+"""
+
+"""
+Bài 3: Phân loại điểm số:
+Nhập một số nguyên score (trong khoảng từ 0 đến 100). Phân loại điểm số và in ra:
+"Weak" nếu score <= 50.
+"Average" nếu 50 < score <= 60.
+"Good" nếu 60 < score <= 75.
+"Very Good" nếu 75 < score <= 90.
+"Excellent" nếu score > 90.
+"""
+score = int(input())
+if score <= 50:
+   print("weak")
+elif 50 < score <= 60:
+   print("average")
+elif 60 <  score <= 75:
+   print("good")
+elif 75 < score <= 90:
+   print("very good")
+else:
+   print("excellent")
+
+   """
+   Bài 5:
+   In tên ngày trong tuần:
+   Nhập một số nguyên từ 0 đến 6. In ra tên ngày tương ứng:
+   0: "Sunday".
+   1: "Monday".
+   2: "Tuesday".
+   3: "Wednesday".
+   4: "Thursday".
+   5: "Friday".
+   6: "Saturday".
+   Yêu cầu:
+   Sử dụng if/elif/else và match - case.
+   dayofweek = int(input())
+   if dayofweek == 0:
+     print("sunday")
+   elif dayofweek == 1:
+     print("monday")
+   elif dayofweek == 2:
+     print("tuesday")
+   elif dayofweek == 3:
+     print("wednesday")
+   elif dayofweek == 4:
+     print("thursday")
+   elif dayofweek == 5:
+     print("friday")
+   else:
+     print("saturday")
+
+   """
+
+   """
+Bài 6:
+Thực hiện phép toán cơ bản:
+Nhập hai số nguyên a, b và một ký tự c từ bàn phím (+, -, *, /). Tính toán kết quả và in ra màn hình.
+Ví dụ: a = 7, b = 9, c = '+' thì in: 16.
+Yêu cầu:
+Sử dụng if/elif/else.
+Input: a,b là số nguyên ; 1 ký tự c
+Output: thực hiện kết quả phép tính
+"""
+a = int(input())
+b = int(input())
+c = input()
+if c == "+":
+   print(a + b)
+elif c == "-":
+   print(a - b)
+elif c == "/":
+   print(a / b)
+else:
+   print(a % b)

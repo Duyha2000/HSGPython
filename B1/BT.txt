@@ -1,0 +1,62 @@
+# https://www.canva.com/design/DAGZD9ebSyg/cZ6PQjzTmT5NKJPReqG7XA/edit
+i1 = 2
+i2 = 5
+i3 = -3
+d1 = 2.0
+d2 = 5.0
+d3 = -0.5
+"""i1 + (i2 * i3) = -13
+i1 * (i2 + i3) = 4
+i1 / (i2 + i3) = 1
+i1 // (i2 + i3) =1
+i1 / i2 + i3 = -2.6
+i1 // i2 + i3 = -3
+3 + 4 + 5 / 3 =  8.6
+3 + 4 + 5 // 3 = 8
+(3 + 4 + 5) / 3 =  4
+(3 + 4 + 5) // 3 = 4
+d1 + (d2 * d3) = -0.5
+d1 + d2 * d3 = -0.5
+d1 / d2 - d3 = 0.9
+d1 / (d2 - d3) = (đáp án đúng là 0.363636)
+d1 + d2 + d3 / 3 = (đáp án đúng là 6.833333)
+(d1 + d2 + d3) / 3 = 2.1(6)
+d1 + d2 + (d3 / 3) = 6.8(3)
+3 * (d1 + d2) * (d1 - d3)= (đáp án em là 52.5)
+"""
+print()  # i1 // i2 : chia lấy phần nguyên 2 : 5 -> 0 dư 2
+## i1 // i2 = 0 - 3 = -3
+# i2 = 2 i2 = 5 i3 = -3
+
+## Input, output:
+
+# Input: là những cái mình sẽ nhập vào:
+"""
+t1 = int(input("Nhập giá trị biến t1: "))
+# Cú pháp: t = kiểu dữ liệu(input())
+t2 = int(input("Nhập giá trị biến t2: "))
+print(t1 + t2)
+# Nhập vào 3 cạnh tam giác và tính chu vi
+# 4.5 5.9 6.78
+a = float(input())
+b = float(input())
+c = float(input())
+print(a + b + c)
+# Output: loa, máy in -> print()
+"""
+# Nhập vào chiều dài, chiều rộng hình chữ nhật: -> tính chu , diện tích của nó:
+"""
+a = int(input())
+b = int(input())
+print((a + b) * 2)  # chu vi hình chữ nhật:
+print(a * b)
+"""
+# Hình tam giác (chu vi , diện tích ):
+a = int(input())
+b = int(input())
+c = int(input())
+e = int(input())
+print(a + b + c)
+print(a / 2 * e)
+
+# Diện tích tam giác = 1/2 * cạnh đáy * chiều cao (chưa có, phải nhập):

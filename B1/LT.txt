@@ -1,0 +1,114 @@
+# Biến:
+# 1 bài toán tính diện tích, chu vi tam giác -> độ dài 3 cạnh
+# Độ dài cạnh thứ nhất = 5 -> a = 5
+# Độ dài cạnh thứ hai = 7 -> b = 7
+# Độ dài cạnh thứ ba = 9 -> c = 9
+# Chu vi tam giác là =  Độ dài cạnh thứ nhất + Độ dài cạnh thứ hai +  Độ dài cạnh thứ ba
+# p = a + b + c = 5 + 7 + 9 -> Chu vi tam giác là p:
+# Tìm x, tìm y
+
+# C++, C, Java:
+a = 5  # 5 là số nguyên: integer: int
+b = 7.5  # 7.5 là số thập phân: double / float
+c = 9  # int
+check = True  # kiểu dữ liệu đúng sai (True/False) -> boolean
+str = "Xin chào các bạn"  # Kiểu dữ liệu chuỗi (String)
+p = a + b + c
+# C++:
+#  a = 5;
+# int b = 7;
+# int c = 9;
+# Kiểm tra kiểu dữ liệu 1 biến, ta dùng type()
+# Tên biến = giá trị
+#print(type(str))  # double
+#print(p)
+
+# Khởi tạo 2 biến chiều dài, chiều rộng và tính diện tích hình chữ nhật:
+x = 5
+y = 3
+area = x * y  # Tính diện tính hình chữ nhật
+#print(area) # Có chữ print mới in ra ngoài màn hình:
+# 4 kiểu dữ liệu trong Python hay gặp: int (số nguyên 2 3 4 5), float/double (số thập phân 3.45 5.689), bool (đúng sai True - False), chuỗi (String "Xin chào")
+"""
+m = 0/0
+print(m)
+"""
+# Chú thích: dạng ghi chú, khi gửi code người khác, hoặc sau này nửa năm sau đọc lại những khối code
+# Dùng dấu # cho chú thích 1 dòng
+# Dùng """ """ cho chú thích nhiều dòng:
+"""
+x = 5
+y = 3
+area = x * y
+print(area)
+"""
+# Tránh chương trình không hoạt động được khi khối code bị lỗi:
+#print("Xin chào")
+
+# Các loại toán tử số học cơ bản:
+# + - * (/  // %) **
+m = 5
+n = 3
+# 5 : 3 = 1 dư 2
+print(m + n)
+# / chia lấy kết quả:
+print(m / n)  # 1.666667
+# // chia lấy phần nguyên:
+print(m // n)  # phần nguyên 1
+# % chia lấy phần dư:
+print(m % n)
+
+# ** -> số mũ
+print(m**n)  # m: cơ số, n là số mũ -> 5 mũ 3 = 125
+
+# Cho 3 số a,b,c tùy ý. Tính tổng bình phương của 3 số này và in ra màn hình:
+a = 2
+b = 2
+c = 3
+p = a**2 + b**2 + c**2
+# print(p) # 29
+
+# Toán tử 1 ngôi:
+# +=
+# Tăng giá trị biến a lên 2 đơn vị:
+# a  += 2 #
+#a = a + 2  # 4
+# C1: a -= 2
+# C2: a = a - 2
+
+# Vòng lặp for, while
+# print(a)  # a = 4
+a = a / 4
+print(a)
+
+## Toán tử so sánh: trả về True False
+
+## So sánh 2 giá trị với nhau: > < >= <= ==
+print(c == b)  ## a = 2 - b = 3 -> True
+# If - else:
+if c == b:
+  print("2 số này bằng nhau")
+else:
+  print("2 số này không bằng nhau")
+
+x = 10  # Khởi tạo biến x và gán giá trị 10 cho nó
+# Nếu trời mưa, thì bọn em không thể ra ngoài đá bóng được, còn nếu không thì có thể đá bóng
+# ==  sẽ sử dụng ở điều kiện if else
+
+# Toán tử logic: and or not
+# Lý được 5 điểm
+# Thúy được 10 điểm
+
+# Cả 2 bạn Lý "và" Thúy đều được học sinh giỏi: mệnh đề này sai (vì có 1 vế bị sai)
+scoreL = 5
+scoreT = 10
+print(scoreL >= 8 and scoreT >= 8)  # False (có 1 mệnh đề sai)
+
+# 2 bạn Lý "hoặc" Thúy được học sinh giỏi: mệnh đề này đúng
+print(scoreL >= 8
+      or scoreT >= 8)  # True (chỉ cần 1 mệnh đề đúng trả về True)
+# Toán tử not: phủ định lại
+
+# Lý xấu trai:
+isHandSomeLy = True
+print(not isHandSomeLy)  # not: phủ định
