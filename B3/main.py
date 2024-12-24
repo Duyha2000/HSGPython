@@ -41,6 +41,7 @@ minutes: Kiểu int. Số phút đỗ.
 Yêu cầu:
 Tính phí đỗ xe và lưu vào biến parkingFee.
 """
+"""
 hours = int(input()) # 3 giờ
 minutes =int(input()) # 30 phút
 tongsophut= hours *60 + minutes # Đổi giờ và phút input vào thành phút -> 150 phút
@@ -62,3 +63,4 @@ elif 359 < tongsophut < 361:
     print("$10000000000000000000lận bán hai trứng dé trả nợ đi")
 else:
     print("100 năm bán thân")
+"""

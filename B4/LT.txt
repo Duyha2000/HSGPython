@@ -1,0 +1,95 @@
+# Vòng lặp:
+# Những hành động lặp đi lặp lại -> ngủ dậy -> vệ sinh cá nhân -> ăn sáng -> đi học -> ăn trưa -> học bài -> tối về ngủ
+# In ra chữ xin chào 5 lần:
+"""
+print("xin chao")
+print("xin chao")
+print("xin chao")
+print("xin chao")
+print("xin chao")
+"""
+# For (lặp 1 điều kiện thỏa mãn cho trước) - while (lặp khi)
+# for i in range(start, end, step):
+#   code bên trong vòng lặp:
+# range: phạm vi
+
+# start: 0
+# end là 5 (không chạy lên giá trị end, mà phải trừ đi 1)
+# [start,end): lấy điểm đầu và không lấy điểm cuối
+# 0 1 2 3 4
+for i in range(0,10,1):
+    print("xin chao")
+# In ra các số từ 1 đến 5: 1 2 3 4 5
+# start: 1 - end: 6, step là 1
+
+# Vòng lặp cho biến i tăng dần từ 1 đến 5
+for i in range(1,6,1):
+    print(i, end=" ") # 1 2 3 4 5
+print()
+
+# in ra các số từ 5 đến 20:
+for i in range(5,21,1):
+    print(i , end=" ")
+#   In ra các số từ 5 về -5: 5 4 3 2 1 0 ... -4 -5
+print()
+
+for i in range(5,-6,-1):
+    print(i , end = " ")
+# In các số chẵn từ 0 đến 10:
+print()
+
+for i in range(0,11,1):
+    if i % 2 == 0:
+     print(i, end=" ")
+"""
+# Tính tổng: sum = 0 -> sum = sum + ...
+
+# Tính tổng các số từ 1 đến 10:
+sum = 0 # tạo 1 kho chứa, bỏ những giá trị i từ 1 đến 10 vào kho chứa này -> sau đấy thì cộng chúng lại
+for i in range(1,11,1):
+    sum = sum + i # 6
+    # sum +=i
+print(sum)
+sum = 0
+for i in range(5,16,1):
+    if i % 2 != 0:
+        sum = sum + i
+print(sum)
+# Tính tích: tich = 1 -> tich = tich * ...
+# Tính tích cách số từ 1 đến 5 --> Kết quả: 1 * 2 * 3 * 4 * 5 = 120
+tich = 1
+for i in range(1,6,1):
+    tich = tich * i
+print(tich)
+sum = 0
+for i in range (1,51,1):
+    if i % 3 == 0  and i % 5 == 0:
+        sum = sum + i
+print(sum)
+"""
+# Tính tổng các số lẻ từ 5 đến 15:
+
+# Tính tổng các số từ 1 đến 50 chia hết cho 3 và 5:range
+# Kết quả: 15 + 30 + 45 = 90
+
+# Đếm ( count ): count = 0 -> count += 1 mỗi lần thỏa mãn điều kiện:
+"""
+count = 0
+# Đếm các số từ 1 đến 5:
+for i in range(1,6,1):
+    count+=1
+print(count)
+"""
+
+# Đếm số lượng các số chia hết cho 4 "hoặc" cho 8 trong khoảng từ 1 đến 50:
+count = 0
+for i in range(1,51,1):
+    if i % 4 == 0 or i % 8 == 0:
+        count+=1
+print(count)
+
+"""
+Bài toán tính tổng: khởi tạo biến tong = 0 --> tong = tong + ... ( hoặc tong += ...)
+Bài toán tính tích: khởi tạo biến tich = 1 --> tich = tich * ... ( hoặc tich *= ...)
+Bài toán đếm: khởi tạo biến dem = 0 -> Mỗi lần thỏa mãn: count += 1 (hoặc count = count + 1)
+"""
