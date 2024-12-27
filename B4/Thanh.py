@@ -51,16 +51,17 @@ Kiểm tra nếu số đó chia hết cho n.
 Ví dụ: Với n = 12, có 6 ước: 1,2,3,4,6,12.
 
 Bài tập 7: Tính lũy thừa
-Nhiệm vụ: Nhập vào hai số nguyên dương a và b, tính aba^bab.
+Nhiệm vụ: Nhập vào hai số nguyên dương a và b, tính a^b.
 Các bước:
 Nhập vào hai số nguyên a và b.
-Dùng vòng lặp hoặc toán tử * để tính aba^bab.
+Dùng vòng lặp hoặc toán tử * để tính a^b.
 In kết quả.
-Ví dụ: Với a = 2 và b = 3, kết quả là 23=82^3 = 823=8.
+Ví dụ: Với a = 2 và b = 3, kết quả là 2^3 = 8.
 
 Bài tập 8: Đếm số chia hết cho X
-Nhiệm vụ: Viết chương trình nhận ba số nguyên A, B, và X (A<BA < BA<B), đếm bao nhiêu số trong khoảng từ A đến B (bao gồm cả A, B) chia hết cho X.
-Ví dụ: Với A=1,B=10,X=2A = 1, B = 10, X = 2A=1,B=10,X=2, có 5 số chia hết cho 2: 2,4,6,8,102, 4, 6, 8, 102,4,6,8,10.
+Nhiệm vụ: Viết chương trình nhận ba số nguyên A, B, và X (A<BA < BA<B),
+ đếm bao nhiêu số trong khoảng từ A đến B (bao gồm cả A, B) chia hết cho X.
+Ví dụ: Với A=1,B=10,X=2, có 5 số chia hết cho 2: 2,4,6,8,10.
 
 Bài tập 9: Số nhỏ nhất chia hết cho 3, 5, và 7
 Nhiệm vụ: Tìm số dương nhỏ nhất chia hết cho cả 3, 5, và 7.
@@ -171,7 +172,6 @@ for i in range(1,m+1,1):
     if i % 2 == 0:
        tich = tich * i
 print(tich)
-"""
 count = 0
 n = int(input()) # 12
 # i đi từ 1 -> 12
@@ -180,3 +180,89 @@ for i in range(1,n+1,1):
     if n % i == 0:
         count += 1
 print(count)
+bài 7:
+a = int(input())
+b = int(input())
+print(a**b)sum
+"""
+"""
+Bài tập: Nhập 1 số và kiểm tra số đó có phải số hoàn hảo hay ko?
+Số hoàn hảo là số mà tổng các ước thực sự của nó (không tính chính nó) bằng chính nó.
+Ví dụ: N = 28 có các ước 1, 2, 4, 7, 14, 28 thì các ước thực sự là 1, 2, 4, 7, 14
+có tổng cũng bằng 28 nên 28 là số hoàn hảo
+Gợi ý: Nhập N -> Tính tổng các ước của số đó:
+sum = 0
+n = int(input())
+for i in range(1,n,1):
+    if n % i == 0:
+        sum = sum + i
+# Nếu số n nhập vào = sum, thì đây là số hoàn hảo, còn không thì in ra không phải số hoàn hảo
+if n == sum:
+    print("số hoàn hảo")
+else:
+    print("không phải só hoàn hảo")
+
+Bài tập: Nhập vào 1 số và kiểm tra số đó có phải số nguyên tố hay ko. 
+Số nguyên tố là số chỉ chia hết cho 1 và chính nó ( số nguyên tố nhỏ nhất là số 2)
+13 -> là số nguyên tố (vì chỉ chia hết cho 1 và 13)
+8 -> ko phải nguyên tố vì nó chia hết cho (1 2 4 và 8)
+Gợi ý: sử dụng biến count (vì số nguyên tố chỉ chia hết cho 2 số nên count = 2, 
+số không phải nguyên tố chia hết cho nhiều hơn 2 số)
+count = 0
+a = int(input()) # a = 13
+# kiểm tra xem các số từ 1 đến 13 thì 13 chia hết cho những số nào
+# Nếu nó chỉ chia hết cho 1 và 13 -> tăng biến count lên 1 và không chia hết cho các số khác thì nó là nguyên tố
+# Nghĩa là đếm được count = 2 thì ra kiểm tra if else
+for i in range(1,a+1):
+    if a % i == 0 :
+        count += 1
+# count = 2 là số nguyên tố, trường hợp còn lại k phải nguyên tố
+# if else phải dùng 2 dấu bằng để so sánh, đừng quên điều kiện 2 dấu bằng, 1 = là sai cú pháp
+if count == 2:
+    print("là số nguyên tô ")
+else:
+    print("không phải số nguyên tố")
+"""
+
+
+"""
+Bài tập: In ra các số: 1 2 4 5 6 7 9 10 bằng vòng lặp for
+Sử dụng if và != để loại bỏ số 3 và 8
+"""
+
+"""
+For if cuối dòng có :
+if, for phải tab vào lề 1 lần
+"""
+"""
+for i in range(1,11):
+    if i != 3 and i != 8:
+        print(i)
+# Continue: bỏ qua giá trị:
+for i in range(1,11):
+    if i == 3 or i == 8:
+        continue
+    print(i, end=" ")
+print()
+# In ra các số chẵn (nghĩa là bỏ qua các số lẻ) từ 1 đến 10 sử dụng continue
+for i in range(1,11):
+    if i % 2 != 0:
+        continue
+    print(i,end=" ")
+# break: thoát vòng lặp:
+# In ra số đầu tiên chia hết cho 3 trong đoạn từ 1 đến 30
+for i in range(1,31,1):
+    if i % 3 == 0:
+        print(i, end=" ")
+        break
+"""
+
+# In ra 3 số đầu tiên chia hết cho 3 và 5 trong đoạn từ 1 đến 200:
+# Gợi ý: dùng count, for và break
+count = 0
+for i in range(1,201):
+    if i % 3==0 and i % 5 == 0:
+        print(i,end=" ")
+        count+= 1
+    if count == 3:
+        break
