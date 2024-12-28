@@ -1,7 +1,7 @@
-https://docs.google.com/document/d/1p9U0xzYb4hy27_hASj7rNvQDQ6JXQnWdOMtcEA0kY1w/edit?tab=t.0
-
 Bài tập 1: Hiển thị các số chẵn và tính tổng của chúng
-Nhiệm vụ: Viết chương trình nhận một số nguyên n làm đầu vào, hiển thị tất cả các số chẵn từ n đến 100 và tính tổng của các số đó.
+Nhhttps://docs.google.com/document/d/1p9U0xzYb4hy27_hASj7rNvQDQ6JXQnWdOMtcEA0kY1w/edit?tab=t.0
+
+iệm vụ: Viết chương trình nhận một số nguyên n làm đầu vào, hiển thị tất cả các số chẵn từ n đến 100 và tính tổng của các số đó.
 Các bước:
 Nhập vào số nguyên n.
 Lặp qua các số từ n đến 100.
@@ -12,6 +12,7 @@ Tính và hiển thị tổng của các số chẵn.
 Đầu ra:
 Tất cả các số chẵn từ n đến 100 (ví dụ: 90 92 94 96 98 100).
 Tổng của các số chẵn (ví dụ: Tổng = 570).
+
 
 Bài tập 2: Số chia hết cho 3 và 5
 Nhiệm vụ: Viết chương trình nhận hai số nguyên a và b làm đầu vào, hiển thị tất cả các số trong khoảng từ a đến b chia hết cho cả 3 và 5.
@@ -53,9 +54,13 @@ Dùng vòng lặp hoặc toán tử * để tính aba^bab.
 In kết quả.
 Ví dụ: Với a = 2 và b = 3, kết quả là 23=82^3 = 823=8.
 
+
+cho 2: 2,4,6,8,102, 4,
 Bài tập 8: Đếm số chia hết cho X
-Nhiệm vụ: Viết chương trình nhận ba số nguyên A, B, và X (A<BA < BA<B), đếm bao nhiêu số trong khoảng từ A đến B (bao gồm cả A, B) chia hết cho X.
-Ví dụ: Với A=1,B=10,X=2A = 1, B = 10, X = 2A=1,B=10,X=2, có 5 số chia hết cho 2: 2,4,6,8,102, 4, 6, 8, 102,4,6,8,10.
+Nhiệm vụ: Viết chương trình nhận ba số nguyên A, B, và X (A<BA < BA<B), đếm bao nhiêu số trong
+khoảng từ A đến B (bao gồm cả A, B) chia hết cho X.
+Ví dụ: Với A=1,B=10,X=2A = 1, B = 10, X = 2A=1,B=10,X=2, có 5 số chia hết
+ 6, 8, 102,4,6,8,10.
 
 Bài tập 9: Số nhỏ nhất chia hết cho 3, 5, và 7
 Nhiệm vụ: Tìm số dương nhỏ nhất chia hết cho cả 3, 5, và 7.
