@@ -186,6 +186,7 @@ for i in range(1,31,1):
         print(i, end=" ")
         break
 """
+"""
 # In ra 3 số đầu tiên: chia hết cho 3 và 5 trong đoạn từ 1 đến 200:
 # Gợi ý: dùng count, for và break
 count = 0
@@ -195,4 +196,4 @@ for i in range(1,201,1):
         count+=1
     if count == 3:
         break
-
+"""
