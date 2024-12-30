@@ -1,6 +1,6 @@
 # Biến:
-# 1 bài toán tính diện tích, chu vi tam giác -> độ dài 3 cạnh
-# Độ dài cạnh thứ nhất = 5 -> a = 5
+# 1 độ dài 3 cạnh
+# Độ dài cạnh thứ nhất = 5 -> a = 5bài toán tính diện tích, chu vi tam giác ->
 # Độ dài cạnh thứ hai = 7 -> b = 7
 # Độ dài cạnh thứ ba = 9 -> c = 9
 # Chu vi tam giác là =  Độ dài cạnh thứ nhất + Độ dài cạnh thứ hai +  Độ dài cạnh thứ ba
