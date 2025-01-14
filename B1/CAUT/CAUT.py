@@ -10,4 +10,4 @@ for i in range(2):
         output += "1/n"
     else:
         output +="0/n"
-    
+file_output write()
